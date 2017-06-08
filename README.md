@@ -10,3 +10,13 @@ docker run -p 8983:8983 ukwm:packagist-solr
 ```
 
 Once they this is running, you can following the [Packagist](https://github.com/composer/packagist) installation guide.
+
+
+## Troubleshooting
+
+Packagist connects, but no results are found.
+
+### Force indexing
+```
+app/console packagist:index --no-debug --env=prod --force
+```
